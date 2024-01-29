@@ -1,0 +1,42 @@
+body {
+	background: LightYellow;
+}
+
+p.first {
+	margin-left: 9.5em;
+	margin-right: 9.5em;
+	background-color: LightGrey;
+}
+
+p.second {
+	margin-left: 9.5em;
+	margin-right: 9.5em;
+	background-color: LightGrey;
+	box-shadow: 5px 5px Gray;
+	text-justify: inter-word;
+}
+
+p.third {
+	margin-left: 11.5em;
+	margin-right: 11.5em;
+	padding: 31px;
+	border: 5px solid Black;
+	box-shadow: 5px 5px Gray;
+}
+
+p.fourth {
+	margin-left: 15em;
+	margin-right: 15em;
+	padding: 15px;
+	border: 5px solid Black;
+	border-radius: 75px;
+	box-shadow: 5px 5px Gray;
+}
+
+p.fifth {
+	margin-left: 9.5em;
+	margin-right: 9.5em;
+	border: 10px solid;
+	padding: 5px;
+	border-image: url(../images/border.png) 36% round;
+}

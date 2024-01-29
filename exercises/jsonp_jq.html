@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<title>JASONP</title>
+		<style>table,td, th {border: 1px solid black;}</style>  
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script>
+			function getStudyAbroad(term, availability){
+				$.ajax({
+					url: 'https://student2.cs.appstate.edu/swansonja/project/data_study_abroad.php',
+					dataType: 'jsonp',
+					success: (data) => {
+						let fdata =data;
+						
+						if (term != "") {
+							fdata = fdata.filter(
+								function(obj) {
+									return obj.Term == term;
+								}
+							)
+						}
+						
+						if (availability != "") {
+							fdata = fdata.filter(
+								function(obj) {
+									return obj.Availability == availability;
+								}
+							)
+						}
+						
+						
+						
+						let table = "<table>\n";
+						table += "<tr><th>Name</t><th>Language</th><th>Availability</th></tr>\n";
+						for (let obj of fdata) {
+							table += "<tr>\n";
+							table += `<td>${obj.Term}</td>`;
+							table += `<td>${obj.Department}</td>`;
+							table += `<td>${obj.Availability}</td>`;
+							table += "</tr>\n";
+						}
+						table += "</table>\n";
+						$("#study_abroad").html(table); //Assumes <div id="study_abroad"></div> in body.
+					}
+				});  
+			}
+			$(getStudyAbroad("Summer I 2020", ""));
+		</script>
+		
+	</head>
+	
+	<body>
+		<div id="study_abroad"></div>
+	</body>
+	
+</html>

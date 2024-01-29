@@ -1,0 +1,41 @@
+body {
+	background-color: LightGrey;
+}
+	
+h1 {
+	background-color: rgb(50,50,50);
+	color: rgb(255,255,255);
+}
+
+p {
+	color: rgba(50,50,50, 1);
+}
+
+ul.two {
+	background-color: rgb(131, 161, 205);
+}
+	
+h2 {
+	background-color: rgb(90, 150, 88);
+	color: LightGrey;
+}
+	
+blockquote p {
+	color: rgb(193, 50, 193);
+}
+
+ol.fetts {
+	background-color: rgb(245, 205, 0);
+}
+
+dt {
+	color: hsl(132, 44%, 79%);
+}
+
+dd {
+	color: hsl(180, 82%, 83%);
+}
+
+dl {
+	background-color: rgb(50, 50, 50);
+}

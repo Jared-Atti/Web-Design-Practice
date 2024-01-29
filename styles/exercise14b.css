@@ -1,0 +1,9 @@
+body {
+	background-image: url("../images/grayflower.png");
+	background-repeat: no-repeat;
+	background-position: 400px 10px;
+}
+
+h1, h2, p {
+	max-width: 850px;
+}

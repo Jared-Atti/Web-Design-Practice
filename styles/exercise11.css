@@ -1,0 +1,80 @@
+body {
+	
+}
+
+li.menu {
+	text-align: center;
+	color: Black;
+	display: inline;
+	font-family: "Arial";
+	border-left: 2px solid black;
+	padding: 0px 10px 0px 10px;
+	
+}
+
+li.menulast {
+	border-right: 2px solid black;
+	padding: 0px 10px 0px 10px;
+}
+
+li.menu:visited {
+	text-decoration: none;
+	color: Black;
+}
+
+li.menu:hover {
+	background-color: #f984ef;
+	
+}
+
+hr {
+	width: 75%;
+	height: 2px;
+	background-color: LightGrey;
+}
+
+thead {
+	color: DarkOrange;
+}
+
+tr.zebra {
+	background-color: LightGrey;
+}
+
+table.data {
+	text-align: left;
+	border-collapse: collapse;
+}
+
+thead {
+	border-top: 2px solid DarkBlue;
+	border-bottom: 2px solid DarkBlue;
+}
+
+th.id {
+	width: 50px;
+}
+
+th.name {
+	width: 250px;
+}
+
+th.occ {
+	width: 150px;
+}
+
+th.loc {
+	width: 200px;
+}
+
+th.price {
+	width: 50px;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+ul.courses {
+	list-style-image: url("../images/star.png");
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Time</title>
+</head>
+<body>
+
+	<h1 id="timeheader">12:00:00</h1>
+	<script>
+		function setTime() {
+			//Write code to initially set the current time in timeheader.
+			//Run startClock.
+			let currentDate = new Date();
+			let hours = currentDate.getHours();
+			let minutes = currentDate.getMinutes();
+			let seconds = currentDate.getSeconds();
+			
+			if (minutes < 10) minutes = "0" + minutes;
+			if (seconds < 10) seconds = "0" + seconds;
+			
+			let th = document.getElementById("timeheader");  //Find the correct element with ID.
+			th.textContent = hours + ":" + minutes + ":" + seconds;	//Change the text on the element.
+			
+			startClock();
+		}
+		function startClock() {
+			//In the setTimeout function below, replace the words anonymous_function
+			//with an actual anonymous function using arrow notation.
+			setTimeout( () => { setTime(); }, 1);
+		}
+		setTimeout("setTime();", 1);
+	</script>
+	
+</body>
+</html>

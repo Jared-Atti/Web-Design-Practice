@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test Table</title>
+  <style>
+    table, tr, td {
+      border:1px solid black;
+      border-collapse: collapse;
+      text-align:center;
+      margin: auto;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+	<!--Main Table-->
+	<table>
+		<!--Row 1-->
+		<tr>
+			<!--Table A-->
+			<td>
+				<table>
+					<tr>
+						<td rowspan="2"> 1 </td>
+						<td> 2 </td>
+					</tr>
+					<tr>
+						<td> 3 </td>
+					</tr>
+				</table>
+			</td>
+			<!--Table B-->
+			<td>
+				<table>
+					<tr>
+						<td> 1 </td>
+						<td rowspan="2"> 3 </td>
+					</tr>
+					<tr>
+						<td> 2 </td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!--Row 2-->
+		<tr>
+			<!--Table C-->
+			<td>
+				<table>
+					<tr>
+						<td colspan="2"> 1 </td>
+					</tr>
+					<tr>
+						<td> 2 </td>
+						<td> 3 </td>
+					</tr>
+				</table>
+			</td>
+			<!--Table D-->
+			<td>
+				<table>
+					<tr>
+						<td> 1 </td>
+						<td> 2 </td>
+					</tr>
+					<tr>
+						<td colspan="2"> 3 </td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<!--Row 3-->
+		<tr>
+			<!--Table E-->
+			<td>
+				<table>
+					<tr>
+						<td> 1 </td>
+						<td rowspan="3"> 4 </td>
+					</tr>
+					<tr>
+						<td > 2 </td>
+					</tr>
+					<tr>
+						<td > 3 </td>
+					</tr>
+				</table>
+			</td>
+			<!--Table F-->
+			<td>
+				<table>
+					<tr>
+						<td style="border:none"></td>
+						<td style="border:none"></td>
+						<td colspan="2" style="border:none"> 1 </td>
+						<td style="border:none"></td>
+						<td style="border:none"></td>
+					</tr>
+					<tr>
+						<td colspan="3"> 2 </td>
+						<td colspan="3"> 3 </td>
+					</tr>
+					
+					<tr>
+						<td colspan="2"> 4 </td>
+						<td colspan="2"> 5 </td>
+						<td colspan="2"> 6 </td>
+					</tr>
+					<tr>
+						<td colspan="2"> 7 </td>
+						<td colspan="4"> 8 </td>
+					</tr>
+					<tr>
+						<td colspan="4"> 9 </td>
+						<td colspan="2"> 0 </td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+  </table>
+</body>
+
+</html>

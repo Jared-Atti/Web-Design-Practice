@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>QEP Data Website Project</title>
+	<link rel="stylesheet" href='../styles/project.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="../scripts/project.js"></script>
+	<style>
+		caption {
+			font-size: 2em;
+			font-weight: bold;
+		}
+	</style>
+</head>
+	<body>
+		<div class="dark-wrapper" id="dark-wrapper">
+			<header>
+				<a href="http://appstate.edu/" title="Appalachian State University">
+					<img src="https://api.appstate.edu/assets/appstate-new-1200.svg" class="logo" alt="Appalachian State University">
+				</a>
+			</header>
+			<hr>
+			<h1>
+				Quality Enhancement Plan
+			</h1>
+		</div>
+		
+		<div class="light-wrapper" id="light-wrapper">
+			<h2>
+				<ul class="navlist">
+					<li class="navli"><a href="https://qep.appstate.edu/faq" class="nli" title="Frequently Asked Questions">FAQ</a></li>
+					<li class="navli"><a href="https://qep.appstate.edu/qep-proposal-presentation" class="nli">QEP Topic Materials</a></li>
+					<li class="navli"><a href="https://qep.appstate.edu/qep-proposals" class="nli" title="Information on content and procedure for submitting your QEP proposal.">QEP Proposals</a></li>
+				</ul>
+			</h2>
+		</div>
+		
+		
+		<aside>
+			<h3>Resources</h3>
+			<ul class="reslist">
+				<li class="resli"><a href="https://qep.appstate.edu/node/5" class="rli">QEP Steering Committee</a></li>
+				<li class="resli"><a href="https://sacscoc.appstate.edu/"  class="rli">SACSCOC Accreditation</a></li>
+				<li class="resli"><a href="https://qep.appstate.edu/sites/default/files/qep-report-final_0.pdf"  class="rli">2013 QEP</a></li>
+				<li class="resli"><a href="https://docs.google.com/spreadsheets/d/1ejFC4WQxpcFPkPsqMCZFfA9cJdP35BUjIzyS2gJkmg4/edit#gid=0"  class="rli">QEPs From Other Insitutions</a></li>
+				<li class="resli"><a href="https://www.appstate.edu/about/strategic-plan-2022-2027/"  class="rli">Strategic Plan 2022-2027</a></li>
+				<li class="resli"><a href="https://irap.appstate.edu/"  class="rli">Institutional Research, Assessment and Planning</a>&nbsp;(IRAP)</li>
+				<li class="resli"><a href="https://irap.appstate.edu/planning/strategic-planning/university-planning-and-priorities-council-uppc"  class="rli">University Planning and Priorities Council</a> (UPPC)</li>
+			</ul>
+		</aside>
+		
+		<p>Please select a list</p>
+		
+		<button type="button">Search by Language</button>
+		<button type="button">Search by Project</button>
+		<button type="button">Search Study Abroad Opportunities</button>
+		
+		<label for="filter">Choose a filter, then select same list: </label>
+		<select name="filter" id="filter">
+		</select>
+		
+		<div id="language"></div>
+		<div id="project"></div>
+		<div id="study_abroad"></div>
+		
+		<footer>
+			<a href="http://appstate.edu/" title="Appalachian State University">
+				<img src="https://api.appstate.edu/assets/appstate-new-1200.svg" class="logo2" alt="Appalachian State University">
+			</a>
+		</footer>
+		
+	</body>
+</html>

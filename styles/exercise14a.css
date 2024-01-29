@@ -1,0 +1,9 @@
+body {
+	background-image:url("../images/flowerbanner.jpg");
+	background-repeat: repeat-y;
+}
+
+h1, h2, p {
+	margin-left: 160px;
+	max-width: 500px;
+}

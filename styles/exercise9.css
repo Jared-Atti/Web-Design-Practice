@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'LobsterTwo';
+	src: url('../fonts/LobsterTwo-Regular.otf');
+}
+
+@font-face {
+	font-family: 'LobsterTwoBold';
+	src: url('../fonts/LobsterTwo-Bold.otf');
+}
+
+body {
+	background: Grey;
+}
+
+p {
+	/*Entire paragraph attributes**/
+	text-align: center;
+	font-size: 200%;
+	/**Second line attributes**/
+	font-family: LobsterTwoBold;
+	color: rgb(255,0,0);
+	text-shadow: 2px 2px 4px Black;
+	word-spacing: 1em;
+}
+
+/**First line attributes**/
+P:first-of-type {
+	font-family: LobsterTwo;
+	text-transform: uppercase;
+	color: rgb(0,0,255);
+	letter-spacing: -2px;
+	word-spacing: 0em;
+}
+
+
+span ~ span {
+	text-transform:	capitalize;
+}
+
+span span {
+	color: rgb(0,255,0);
+	text-transform: uppercase;
+}
+
+span[go="go"] {
+	text-decoration: line-through;
+}
+
